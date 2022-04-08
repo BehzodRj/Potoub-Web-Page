@@ -1,0 +1,21 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #12aff0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+    }
+    i {
+        margin-top: 25px;
+        cursor: pointer;
+
+        &:active {
+            transform: scale(.99);
+        }
+    }
+}

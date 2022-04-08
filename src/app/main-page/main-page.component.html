@@ -1,0 +1,230 @@
+<div class="header_container">
+  <div class="header_block">
+    <img class="header_bg" src="assets/img/Potoub.png" alt="">
+
+    <div class="header_items">
+      <button onclick="alert('Nothing to download')">Download</button>
+      <h1>Login</h1>
+      <i class="fas fa-search"></i>
+      <div class="nav_block" (click)="navAnime()">
+        <div class="stick" [@navigation]="line1 ? 'after' : 'before' "></div>
+        <div class="stick" [@navigation]="line1 ? 'nextAfter' : 'nextBefore' "></div>
+        <div class="stick" [@navigation]="line1 ? 'lastAfter' : 'lastBefore' "></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header_main-block">
+    <div class="header_main-arrows_items">
+      <i class="fas fa-arrow-circle-left"></i>
+      <i class="fas fa-arrow-circle-right"></i>
+    </div>
+
+    <div class="header_main-items">
+      <div class="headers_main-title">
+        <h1>Get Thinking A long time</h1>
+        <h2 [@readMore1]="readFst ? 'open' : 'closed' ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis </h2>
+        <button (click)="readMoreButton1()">Read More</button>
+      </div>
+
+      <img class="header_main_bg" src="/assets/img/back-img.png" alt="">
+    </div>
+  </div>
+</div>
+<div class="navbar_content" [@navigation]="line1 ? 'afterNav' : 'beforeNav' ">
+  <div class="navbar_block">
+    <img src="/assets/img/Potoub2.png" alt="">
+    <h1>Login</h1>
+    <h1 onclick="alert('Nothing to download')">Download</h1>
+    <h1 (click)="logOut()">Log-out</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="main_content">
+    <img src="/assets/img/19963.png" alt="">
+
+    <div class="main_items">
+      <h1>About <span>Software</span></h1>
+      <h2 [@readMore2]="readSec ? 'open' : 'closed' ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit </h2>
+      <div class="but_block">
+        <button (click)="readMoreButton2()">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about_content">
+    <h1 class="title">Why <span>Choose Us</span></h1>
+
+    <div class="about_block">
+      <div class="about_items">
+        <h1 [ngStyle]="{background: buttonFst ? '#000' : '', color: buttonFst ? '#ffffff' : ''}" (click)="butFst()">Easy to customize</h1>
+        <h1 [ngStyle]="{background: buttonSec ? '#000' : '', color: buttonSec ? '#ffffff' : ''}" (click)="butSec()">More flexible</h1>
+        <h1 [ngStyle]="{background: buttonThd ? '#000' : '', color: buttonThd ? '#ffffff' : ''}" (click)="butThd()">Clean Mode</h1>
+        <h1 [ngStyle]="{background: buttonFth ? '#000' : '', color: buttonFth ? '#ffffff' : ''}" (click)="butFth()">Ratinaready</h1>
+      </div>
+      <div class="about_titles">
+        <img src="/assets/img/package.png" alt="">
+        <h1>Ad Minim</h1>
+            
+        <h2 *ngIf="buttonFst">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum."</h2>
+
+        <h2 *ngIf="buttonSec">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"</h2>
+
+        <h2 *ngIf="buttonThd">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum."</h2>
+
+        <h2 *ngIf="buttonFth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="work_content">
+    <div class="work_block">
+      <div class="work_item">
+        <h1>How To <span>Works it</span></h1>
+        <h2 [@readMore3]="readThd ? 'open' : 'closed' ">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+          Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+          Ipsum passage, and going through the cites of the word in classical literature, discovered. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+          Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+          Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+          Ipsum passage, and going through the cites of the word in classical literature, discovered.</h2>
+        <button (click)="readMoreButton3()">Read More</button>
+      </div>
+      <img src="/assets/img/Layer 5.png" alt="">
+    </div>
+  </div>
+
+  <div class="request_content">
+    <div class="request_block">
+      <h1>Request <span>A call Back</span></h1>
+      <form action="" [formGroup]="requestForm">
+        <input type="text" placeholder="Name" formControlName="name" [ngStyle]="{'border': requestForm.controls['name'].invalid ? '1px solid red' : '1px solid green' }">
+        <input type="email" placeholder="Email" formControlName="email" [ngStyle]="{'border': requestForm.controls['email'].invalid ? '1px solid red' : '1px solid green' }">
+        <input type="number" placeholder="Phone Number" formControlName="phone" [ngStyle]="{'border': requestForm.controls['phone'].invalid ? '1px solid red' : '1px solid green' }">
+        <div class="textarea_block">
+          <textarea placeholder="Message" formControlName="message"></textarea>
+        </div>
+        <div class="but_block">
+          <button [disabled]="requestForm.invalid" [ngStyle]="{'opacity': requestForm.invalid ? '0.5' : '1'}" (click)="sendRequest()">SEND</button>
+        </div>
+      </form>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1854.9595927617947!2d68.79809946729598!3d38.56469864272753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d14643c587c5%3A0xdf9994f8eb15e512!2sBabilon-Mobile!5e0!3m2!1sru!2s!4v1645619854376!5m2!1sru!2s"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <footer>
+    <div class="footer_content">
+      <div class="contacts_content">
+
+        <div class="address_block">
+          <h1>Address</h1>
+          <h2>It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, </h2>
+        </div>
+
+        <div class="link_block">
+          <h1>Links</h1>
+
+          <div class="link_items">
+            <i class="fas fa-circle fa-1x"></i>
+            <h2>Home</h2>
+          </div>
+
+          <div class="link_items">
+            <i class="fas fa-circle fa-1x"></i>
+            <h2>About</h2>
+          </div>
+
+          <div class="link_items">
+            <i class="fas fa-circle fa-1x"></i>
+            <h2>Work</h2>
+          </div>
+
+          <div class="link_items">
+            <i class="fas fa-circle fa-1x"></i>
+            <h2>Contact</h2>
+          </div>
+        </div>
+
+        <div class="follow_block">
+          <h1>Follow Us</h1>
+
+          <span>
+            <i class="fas fa-circle fa-1x"></i>
+            <i class="fab fa-facebook"></i>
+            <h2>Facebook</h2>
+          </span>
+
+          <span>
+            <i class="fas fa-circle fa-1x"></i>
+            <i class="fab fa-twitter"></i>
+            <h2>Twitter</h2>
+          </span>
+
+          <span>
+            <i class="fas fa-circle fa-1x"></i>
+            <i class="fab fa-linkedin"></i>
+            <h2>Linkedin</h2>
+          </span>
+
+          <span>
+            <i class="fas fa-circle fa-1x"></i>
+            <i class="fab fa-youtube"></i>
+            <h2>Youtube</h2>
+          </span>
+
+          <span>
+            <i class="fas fa-circle fa-1x"></i>
+            <i class="fab fa-instagram"></i>
+            <h2>Instagram</h2>
+          </span>
+        </div>
+
+        <div class="news_block">
+          <h1>Newsletter</h1>
+
+          <div class="news_items">
+            <input type="text">
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="reserves_block">
+    <h1>&copy; 2019 All Rights Reserved. Free Website Templates</h1>
+  </div>
+</div>
